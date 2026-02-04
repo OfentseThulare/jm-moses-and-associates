@@ -44,19 +44,19 @@ export const WhyChooseUs: React.FC = () => {
   ];
 
   return (
-    <section className="py-32 bg-white">
+    <section className="py-16 sm:py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col lg:flex-row gap-20 items-start">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-20 items-start">
           <div className="w-full lg:w-5/12">
             <span className="text-brand-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Why Choose Us</span>
-            <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-charcoal leading-tight mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-brand-charcoal leading-tight mb-4 sm:mb-6">
               A partner that helps your business flourish
             </h2>
             <p className="text-brand-grey text-lg font-light leading-relaxed">
               We go beyond compliance. Our role is to provide the financial clarity and strategic insight that enable you to make confident decisions and grow sustainably.
             </p>
           </div>
-          <div className="w-full lg:w-7/12 space-y-10">
+          <div className="w-full lg:w-7/12 space-y-8 sm:space-y-10">
             {reasons.map((reason, index) => (
               <Reason key={index} {...reason} />
             ))}

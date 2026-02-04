@@ -6,7 +6,7 @@ export const Footer: React.FC = () => {
   return (
     <>
       {/* Dark CTA Banner Section */}
-      <section className="bg-brand-charcoal py-24 relative overflow-hidden">
+      <section className="bg-brand-charcoal py-16 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <svg className="w-full h-full" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg">
             <path d="M0,1000 C300,800 400,950 700,700 C1000,450 1000,0 1000,0" fill="none" stroke="white" strokeWidth="2" />
@@ -16,12 +16,12 @@ export const Footer: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row justify-between items-center gap-12">
             <div className="text-center lg:text-left">
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-white mb-6">Ready to strengthen your financial foundation?</h2>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-white mb-4 sm:mb-6">Ready to strengthen your financial foundation?</h2>
               <p className="text-xl text-white/70 font-light">Let us help you achieve clarity, compliance and sustainable growth.</p>
             </div>
             <button 
               onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}
-              className="px-10 py-4 rounded-lg border-2 border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all duration-300"
+              className="px-8 sm:px-10 py-4 rounded-lg border-2 border-white text-white font-bold uppercase tracking-widest hover:bg-white hover:text-brand-charcoal transition-all duration-300 text-center text-sm sm:text-base whitespace-nowrap"
             >
               Request a Consultation →
             </button>
@@ -30,10 +30,10 @@ export const Footer: React.FC = () => {
       </section>
 
       {/* Main Footer */}
-      <footer className="bg-white border-t border-brand-border py-20">
+      <footer className="bg-white border-t border-brand-border py-12 sm:py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
-            <div className="col-span-1 md:col-span-1">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 sm:gap-12 mb-12 sm:mb-16">
+            <div className="col-span-2 sm:col-span-2 md:col-span-1">
               <img 
                 src={logoSrc} 
                 alt="JM Moses and Associates" 

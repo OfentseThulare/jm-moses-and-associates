@@ -19,10 +19,10 @@ export const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="py-0 bg-white">
-      <div className="flex flex-col lg:flex-row min-h-[800px]">
+      <div className="flex flex-col lg:flex-row lg:min-h-[800px]">
         
         {/* Left Side: Image Content */}
-        <div className="w-full lg:w-1/2 relative bg-brand-charcoal flex items-center justify-center p-12 lg:p-24 overflow-hidden">
+        <div className="w-full lg:w-1/2 relative bg-brand-charcoal flex items-center justify-center p-8 sm:p-12 lg:p-24 overflow-hidden min-h-[400px] lg:min-h-0">
           <img 
             src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&q=80&w=1200" 
             alt="Consultant in meeting" 
@@ -30,8 +30,8 @@ export const Contact: React.FC = () => {
           />
           <div className="relative z-10 max-w-md text-white">
              <span className="text-brand-red font-bold tracking-[0.2em] uppercase text-xs mb-6 block">Contact Us</span>
-             <h2 className="text-5xl font-serif font-bold mb-8 leading-tight">Get a free consultation</h2>
-             <p className="text-xl text-white/80 font-light leading-relaxed mb-12">
+             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold mb-6 sm:mb-8 leading-tight">Get a free consultation</h2>
+             <p className="text-base sm:text-xl text-white/80 font-light leading-relaxed mb-8 sm:mb-12">
                Discuss your compliance needs with a qualified professional. We respond within 24 hours.
              </p>
              <div className="space-y-6">
@@ -48,18 +48,18 @@ export const Contact: React.FC = () => {
         </div>
 
         {/* Right Side: Form */}
-        <div className="w-full lg:w-1/2 bg-brand-offWhite p-12 lg:p-24 flex items-center">
+        <div className="w-full lg:w-1/2 bg-brand-offWhite p-8 sm:p-12 lg:p-24 flex items-center">
           <div className="w-full max-w-xl mx-auto">
             {submitted ? (
               <div className="text-center py-12">
                 <div className="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-8 text-green-600">
                   <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                 </div>
-                <h3 className="text-4xl font-serif font-bold text-brand-charcoal mb-4">Message Sent</h3>
+                <h3 className="text-3xl sm:text-4xl font-serif font-bold text-brand-charcoal mb-4">Message Sent</h3>
                 <p className="text-brand-grey text-lg">We will reach out to you shortly with clear next steps.</p>
               </div>
             ) : (
-              <form onSubmit={handleSubmit} className="space-y-8">
+              <form onSubmit={handleSubmit} className="space-y-6 sm:space-y-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                   <div>
                     <label className="block text-xs font-bold text-brand-charcoal mb-3 uppercase tracking-widest">Full Name</label>

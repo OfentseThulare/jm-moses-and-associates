@@ -8,7 +8,7 @@ export const Hero: React.FC = () => {
   };
 
   return (
-    <section className="relative min-h-[90vh] flex items-center pt-32 pb-40 lg:pt-48 lg:pb-56 overflow-hidden">
+    <section className="relative min-h-[80vh] sm:min-h-[90vh] flex items-center pt-24 pb-28 sm:pt-32 sm:pb-40 lg:pt-48 lg:pb-56 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -21,13 +21,13 @@ export const Hero: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-serif font-bold text-white leading-[1.1] mb-8 animate-in fade-in slide-in-from-bottom-8 duration-700">
+          <h1 className="text-3xl sm:text-5xl md:text-7xl font-serif font-bold text-white leading-[1.1] mb-6 sm:mb-8 animate-in fade-in slide-in-from-bottom-8 duration-700">
             Financial clarity. Compliance. Growth.
           </h1>
-          <p className="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed max-w-2xl font-light">
+          <p className="text-base sm:text-xl md:text-2xl text-white/90 mb-8 sm:mb-12 leading-relaxed max-w-2xl font-light">
             We partner with businesses and individuals to maintain financial order, ensure compliance and support sustainable growth — through integrated accounting, tax, audit and advisory services.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mb-8 sm:mb-12">
             <Button onClick={scrollToContact} variant="outline" className="group">
               Contact Us <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
 
       {/* Slanted Bottom Edge */}
       <div
-        className="absolute bottom-0 left-0 w-full h-32 bg-white"
+        className="absolute bottom-0 left-0 w-full h-16 sm:h-32 bg-white"
         style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}
       ></div>
     </section>

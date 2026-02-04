@@ -41,7 +41,7 @@ export const Header: React.FC = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-10 items-center">
+          <nav className="hidden lg:flex space-x-6 xl:space-x-10 items-center">
             {[
               { label: 'Home', target: 'home' },
               { label: 'Services', target: 'services' },
@@ -72,7 +72,7 @@ export const Header: React.FC = () => {
           </nav>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button 
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
               className={`${isScrolled ? 'text-brand-charcoal' : 'text-white'} p-2 transition-colors`}
@@ -85,7 +85,7 @@ export const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 w-full bg-white border-t border-brand-border shadow-2xl py-8 animate-in slide-in-from-top-4 duration-300">
+        <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-brand-border shadow-2xl py-8 animate-in slide-in-from-top-4 duration-300">
           <div className="flex flex-col space-y-6 px-8">
             {[
               { label: 'Home', target: 'home' },

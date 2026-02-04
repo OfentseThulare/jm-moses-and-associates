@@ -8,7 +8,7 @@ interface ServiceCardProps {
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ title, description, icon }) => (
-  <div className="bg-white p-10 rounded-lg border border-brand-border hover:border-transparent hover:shadow-2xl transition-all duration-500 group flex flex-col items-start">
+  <div className="bg-white p-6 sm:p-10 rounded-lg border border-brand-border hover:border-transparent hover:shadow-2xl transition-all duration-500 group flex flex-col items-start">
     <div className="w-16 h-16 bg-brand-offWhite rounded-full flex items-center justify-center text-brand-red mb-8 group-hover:bg-brand-red group-hover:text-white transition-all duration-300">
       {React.cloneElement(icon as React.ReactElement, { size: 28 })}
     </div>
@@ -45,17 +45,17 @@ export const Services: React.FC = () => {
   ];
 
   return (
-    <section id="services" className="py-32 bg-white">
+    <section id="services" className="py-16 sm:py-24 lg:py-32 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="mb-20 text-center max-w-3xl mx-auto">
+        <div className="mb-12 sm:mb-20 text-center max-w-3xl mx-auto">
           <span className="text-brand-red font-bold tracking-[0.2em] uppercase text-xs mb-4 block">Our Expertise</span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold text-brand-charcoal leading-tight mb-6">Integrated solutions for every stage of your business</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-brand-charcoal leading-tight mb-4 sm:mb-6">Integrated solutions for every stage of your business</h2>
           <p className="text-brand-grey text-lg font-light leading-relaxed">
             We deliver flexible, enterprise-grade accounting and advisory services tailored for corporates and SMEs — so you can focus on running your business while we handle the numbers.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}
